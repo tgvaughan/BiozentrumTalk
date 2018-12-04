@@ -1,0 +1,15 @@
+
+Intro to group at the beginning.
+
+Mention more recent EBOV outbreak.  Real-time phylogenetics!
+
+Make the end more exciting!!
+integrate differnet data sources, 
+
+Introduction to superspreading in the wrong order - talk about
+superspreading first, then model.
+Why does superspreading happen??
+
+Taming the BEAST!
+
+Replace influenza tree (Nicola is using it).
