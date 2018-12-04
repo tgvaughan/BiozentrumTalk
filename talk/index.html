@@ -1,0 +1,158 @@
+---
+title: Flexible phylodynamic inferrence of prevalence dynamics using Particle Filtering
+layout: presentation
+reveal:
+    theme: theme.css
+---
+
+<section class="titlepage">
+  <div class="title">
+    Trees and Beyond!
+
+    <div class="subtitle">
+      Adventures in Bayesian Phylodynamics
+    </div>
+
+  </div>
+
+  <div class="authors">
+    Tim Vaughan
+  </div>
+  <div class="institution">Stadler Group, D-BSSE, ETH Z&uuml;rich</div>
+
+  <div class="date">
+    D-BSSE Departmental Seminar, 11<sup>th</sup> Dec, 2018
+  </div>
+
+  <div style="float:left;margin-top:-0.5em">
+    <img data-src="eth_logo.png" style="height:100px">
+  </div>
+  <div style="float:right;">
+    <img data-src="cEvo_logo.png" style="height:80px">
+  </div>
+</section>
+
+<section>
+  <h1>Overview</h1>
+
+  <ul class="spaced" style="margin-top:10%">
+    <li> Introduction to <b>Bayesian Phylodynamics</b> </li>
+    <li> Phylodynamic inference of <b>epidemic prevalence dynamics</b></li>
+    <li> Inferring recent <b>non-treelike evolution</b> of pathogenic E coli </li>
+    <li> Searching for Ebola <b>super-spreading events</b> </li>
+  </ul>
+
+</section>
+
+<section>
+  <h1>What is a Phylogenetic Tree?</h1>
+
+  <div style="position:relative; width:800px; height:600px; margin:0 auto;">
+    <div class="fragment current-visible"
+         style="position:absolute">
+
+      <br>
+
+      <blockquote> A phylogenetic tree is a
+        branching diagram or "tree" showing the evoluionary
+        relationships between various species, individuals,
+        or genes.
+      </blockquote>
+    </div>
+    <img class="fragment current-visible" width="600" style="margin:0px;padding:0px;"
+         data-src="primate_tree.jpg"
+         style="position:absolute;top:0;left:0;" />
+    <div class="figure fragment"
+         style="position:absolute;top:0;left:0;margin:0;padding:0;">
+      <img width="800" data-src="flu_tree.png" style="margin:0px;padding:0px"/>
+      <div class="cite">Bedford et al., PLoS Pathogens, 2010</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1>What is Phylodynamics?</h1>
+  <ul>
+    <li>What does a phylogenetic tree tell us about a population?</li>
+    <li>Places the emphasis on the population itself instead of the subset of individuals involved in a particular phylogeny.</li>
+  </ul>
+
+  <img data-src="phylodynamics.svg"/>
+</section>
+
+<section>
+  <h1>What is a Population?</h1>
+
+  <div style="align:center">
+
+    <img style="height:250px;margin-right:20px;margin-bottom:0px" data-src="viruses.jpg">
+    <img style="height:250px;margin-bottom:0px" data-src="lemurs.jpg">
+  <img style="height:250px;margin-top:0px;padding-top:0px" data-src="species.jpg">
+  </div>
+</section>
+
+<section>
+  <h1>Connecting the dots...</h1>
+</section>
+
+<section>
+  <h1>Bayesian phylodynamics</h1>
+</section>
+
+
+<!-- Outline:
+
+* Overview slide
+
+---
+
+* What is a phylogenetic tree?
+
+* What is phylodynamics?
+
+* Big slide connecting all the dots
+
+* Bayesian phylodynamics
+
+---
+
+* Modeling epidemics using birth-death branching processes
+
+* Challenge of computing phylodynamic likelihood
+
+* Simulation-based approach (particle filtering)
+
+* Application to Ebola data
+
+* Software
+
+---
+
+* Bacterial evolution - rampant recombination
+
+* Phylogenetic recombination networks
+
+* Simplified networks
+
+* Application to E coli pathogenicity
+
+* Software
+
+---
+
+* Polytomies in phylogenetic trees
+
+* What can cause polytomies in transmission trees?
+
+* Algorithm for inferring polytomies
+
+* Application to Simulated data
+
+* Application to Ebola data
+
+* Software
+
+---
+
+* Summary and Acknowledgements
+-->

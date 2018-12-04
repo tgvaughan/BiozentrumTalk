@@ -1,0 +1,130 @@
+---
+---
+
+// Default mixins and settings -----------------
+@import "mixins";
+@import "settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url({{site.baseurl}}/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+
+
+$themeColor: purple;
+                 
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 32px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingColor: $backgroundColor;
+$headingBackgroundColor: $themeColor;
+$headingBackgroundImage: linear-gradient(to right, blue, purple);
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #151;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+$citeColor: #b00;
+
+$heading1Size: 2.0em;
+$heading2Size: 1.8em;
+$heading3Size: 1.5em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "theme";
+// ---------------------------------------------
+
+section.titlepage {
+    .title {
+        color: $backgroundColor;
+        //background-color: $themeColor;
+        background-image: linear-gradient(blue,purple);
+        font-family: $mainFont;
+        font-size: 1.8em;
+        font-weight: bold;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+        .subtitle {
+            font-size: 0.9em;
+        }
+    }
+
+    .authors {
+        font-size: 1em;
+        font-weight: bold;
+
+        padding-top: 1.5em;
+    }
+
+    .institution {
+        padding-top: 0.5em;
+    }
+
+    .date {
+        padding-top: 1.5em;
+    }
+}
+
+.reveal {
+    p {
+        text-align: left;
+        margin-bottom: 0em;
+    }
+
+    blockquote {
+        background: $themeColor;
+        color: $backgroundColor;
+        font-style: normal;
+    }
+
+    .spaced li:not(:first-child) {
+        padding-top: 1em;
+    }
+
+    section img {
+        border: none;
+        box-shadow: none;
+    }
+
+    blockquote {
+        .textbox {
+            background: $backgroundColor;
+            color: $mainColor;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            text-align: left
+        }
+
+        > div.title {
+            color: $backgroundColor;
+            background: $themeColor;
+            text-align: left;
+        }
+    }
+
+    .cite {
+        color: $citeColor;
+        font-size: 0.5em;
+    }
+
+    a.cite {
+        color: $citeColor;
+        font-size: 1.0em;
+        white-space: nowrap
+    }
+}
