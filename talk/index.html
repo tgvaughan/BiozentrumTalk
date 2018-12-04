@@ -44,6 +44,10 @@ reveal:
 
 </section>
 
+<section class="center">
+  <h1>Introduction: Bayesian Phylodynamics</h1>
+</section>
+
 <section>
   <h1>What is a Phylogenetic Tree?</h1>
 
@@ -109,6 +113,138 @@ reveal:
 
 <section>
   <h1>Bayesian phylodynamics</h1>
+
+  <img data-src="Data_generation.svg" style="width:80%;text-align:center">
+
+  <ul class="spaced">
+    <li>Generative models connect the population dynamics model to the observed sequence alignment.</li>
+    <li>Use Bayesian inference to work backwards:</li>
+  </ul>
+  <img data-src="Posterior_treeprior_nohl.svg">
+</section>
+
+
+<section class="center">
+  <h1>First Adventure:<br>Inferring Epidemic Dynamics</h1>
+</section>
+
+<section>
+  <h1>Modelling epidemics using birth-death processes</h1>
+
+
+  <ul>
+    <li>For small populations, <i>or populations which are temporarily small</i> (e.g. exponential growth), discrete nature of population size matters.</li>
+    <li class="fragment">As we usually have no way of knowing the exact timing of population events, this suggests use of stochastic population models.</li>
+  </ul>
+
+  <div class="fragment">
+  <p>For example,</p>
+  <blockquote class="textbox">
+    <div class="title">The stochastic SIS model</div>
+    \begin{align}
+    S + I & \overset{\beta}{\longrightarrow} 2I\\
+    I & \overset{\gamma}{\longrightarrow} S
+    \end{align}
+  </blockquote>
+  </div>
+
+  <ul>
+    <li class="fragment">How do we compute $P(G|\beta,\gamma)$ for such models?</li>
+    <li class="fragment">Can we jointly infer the population dynamics?</li>
+  </ul>
+</section>
+
+<section>
+  <h1>Particle Filtering for Trees</h1>
+
+  <div class="flipper" style="height:500px">
+    <img data-src="bigSIS.svg">
+    <img data-src="treeBPF10.svg" class="fragment">
+    <img data-src="treeBPF9.svg" class="fragment">
+    <img data-src="treeBPF8.svg" class="fragment">
+    <img data-src="treeBPF7.svg" class="fragment">
+    <img data-src="treeBPF6.svg" class="fragment">
+    <img data-src="treeBPF5.svg" class="fragment">
+    <img data-src="treeBPF4.svg" class="fragment">
+    <img data-src="treeBPF3.svg" class="fragment">
+    <img data-src="treeBPF2.svg" class="fragment">
+    <img data-src="treeBPF.svg" class="fragment">
+  </div>
+
+  <p class="fragment">Here $p_{\textrm{coal}}=\binom{k(t)}{2}/\binom{I(t)}{2}$ where $k(t)=$ num. of lineages just after $t$.</p>
+  
+</section>
+
+<section>
+  <h1>Particle Filtering for Trees</h1>
+
+  <div class="flipper" style="height:800px">
+    <img data-src="exampleTrajectories1.svg">
+    <img data-src="exampleTrajectories2.svg" class="fragment">
+  </div>
+</section>
+
+<section>
+  <h1>Including unsequenced samples</h1>
+
+    <ul>
+    <li>Including unsequenced samples in the particle filtering algorithm is easy: just add additional observations.</li>
+  </ul>
+
+  <img data-src="seq+noseqBPF.svg" style="width:1000px" class="fragment">
+
+  <ul class="fragment">
+    <li>Much more efficient than including unsequenced samples on tree explicitly.</li>
+  </ul>
+</section>
+
+<section>
+  <h1>Ebola in Sierra Leone</h1>
+  <ul>
+    <li>Aim to infer prevalence dynamics using 101 EBOV genomes sequenced from <b>Kailahun District</b> in Sierra Leone during the 2014-2015 EVD epidemic.</li>
+    <li>Sequences from various studies, curated by <a class="cite">[Dudas et al., Nature, 2017]</a>.</li>
+  </ul>
+  <img data-src="WA_EVD_Dudas.jpg" style="height:350px">
+</section>
+
+<section>
+  <h1>Sample distribution</h1>
+  <img data-src="EbolaSampleDist.svg" style="height:500px">
+
+  <p style="margin-top:-20px">Nonlinear relationship between WHO case counts and genome samples!</p>
+</section>
+
+<section>
+  <h1>EBOV prevalence</h1>
+  <img data-src="kailahun_full.png" style="width:700px">
+</section>
+
+<section>
+  <h1>EBOV reproductive number</h1>
+  <img data-src="kailahun_full_Re.png" style="width:700px">
+</section>
+
+<section>
+  <center>
+  <img data-src="EpiInf_page.png" style="width:500px">
+  </center>
+
+  Visit <b><a href="https://tgvaughan.github.io/EpiInf">tgvaughan.github.io/EpiInf</a></b> for installation instructions.
+</section>
+
+
+
+<section class="center">
+  <h1>Second Adventure:<br>Non-treelike Evolution in <i>E. coli</i></h1>
+</section>
+
+<section class="center">
+  <h1>Third Adventure:<br>Finding super-spreading Events</h1>
+</section>
+
+
+<section>
+  <h1>Summary and Acknolwedgements</h1>
 </section>
 
 

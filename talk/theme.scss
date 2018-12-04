@@ -29,7 +29,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: #151;
+$linkColor: purple;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 $citeColor: #b00;
@@ -102,19 +102,17 @@ section.titlepage {
         box-shadow: none;
     }
 
-    blockquote {
-        .textbox {
-            background: $backgroundColor;
-            color: $mainColor;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-            text-align: left
-        }
+    blockquote.textbox {
+        background: $backgroundColor;
+        color: $mainColor;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        text-align: left
+    }
 
-        > div.title {
-            color: $backgroundColor;
-            background: $themeColor;
-            text-align: left;
-        }
+    blockquote.textbox > div.title {
+        color: $backgroundColor;
+        background: $themeColor;
+        text-align: left;
     }
 
     .cite {
