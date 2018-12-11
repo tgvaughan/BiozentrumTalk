@@ -33,13 +33,12 @@ reveal:
 </section>
 
 <section>
-  <h2>Overview</h2>
+  <h1>Overview</h1>
 
   <ul class="spaced" style="margin-top:10%">
     <li> Introduction to <b>Bayesian Phylodynamics</b> </li>
     <li> Phylodynamic inference of <b>epidemic prevalence dynamics</b></li>
     <li> Inferring recent <b>non-treelike evolution</b> of pathogenic E coli </li>
-    <li> Searching for Ebola <b>super-spreading events</b> </li>
   </ul>
 
 </section>
@@ -49,7 +48,18 @@ reveal:
 </section>
 
 <section>
-  <h2>What is a Phylogenetic Tree?</h2>
+  <h1>What is a Population?</h1>
+
+  <div style="align:center">
+
+    <img style="height:250px;margin-right:20px;margin-bottom:0px" data-src="viruses.jpg">
+    <img style="height:250px;margin-bottom:0px" data-src="lemurs.jpg">
+  <img style="height:250px;margin-top:0px;padding-top:0px" data-src="species.jpg">
+  </div>
+</section>
+
+<section>
+  <h1>What is a Phylogenetic Tree?</h1>
 
   <div style="position:relative; width:800px; height:600px; margin:0 auto;">
     <div class="fragment current-visible"
@@ -75,7 +85,7 @@ reveal:
 </section>
 
 <section>
-  <h2>What is Phylodynamics?</h2>
+  <h1>What is Phylodynamics?</h1>
   <ul>
     <li>What does a phylogenetic tree tell us about a population?</li>
     <li>Places the emphasis on the population itself instead of the subset of individuals involved in a particular phylogeny.</li>
@@ -85,18 +95,7 @@ reveal:
 </section>
 
 <section>
-  <h2>What is a Population?</h2>
-
-  <div style="align:center">
-
-    <img style="height:250px;margin-right:20px;margin-bottom:0px" data-src="viruses.jpg">
-    <img style="height:250px;margin-bottom:0px" data-src="lemurs.jpg">
-  <img style="height:250px;margin-top:0px;padding-top:0px" data-src="species.jpg">
-  </div>
-</section>
-
-<section>
-  <h2>Connecting the dots...</h2>
+  <h1>Connecting the dots...</h1>
 
 <section class="center">
   <div class="flipper" style="margin-top:100px">
@@ -112,7 +111,7 @@ reveal:
 </section>
 
 <section>
-  <h2>Bayesian phylodynamics</h2>
+  <h1>Bayesian phylodynamics</h1>
 
   <img data-src="Data_generation.svg" style="width:80%;text-align:center">
 
@@ -129,7 +128,7 @@ reveal:
 </section>
 
 <section>
-  <h2>Modelling epidemics using birth-death processes</h2>
+  <h1>Modelling epidemics using birth-death processes</h1>
 
 
   <ul>
@@ -155,7 +154,7 @@ reveal:
 </section>
 
 <section>
-  <h2>Particle Filtering for Trees</h2>
+  <h1>Particle Filtering for Trees</h1>
 
   <div class="flipper" style="height:500px">
     <img data-src="bigSIS.svg">
@@ -176,7 +175,7 @@ reveal:
 </section>
 
 <section>
-  <h2>Particle Filtering for Trees</h2>
+  <h1>Particle Filtering for Trees</h1>
 
   <div class="flipper" style="height:800px">
     <img data-src="exampleTrajectories1.svg">
@@ -185,7 +184,7 @@ reveal:
 </section>
 
 <section>
-  <h2>Including unsequenced samples</h2>
+  <h1>Including unsequenced samples</h1>
 
     <ul>
     <li>Including unsequenced samples in the particle filtering algorithm is easy: just add additional observations.</li>
@@ -199,7 +198,7 @@ reveal:
 </section>
 
 <section>
-  <h2>Ebola in Sierra Leone</h2>
+  <h1>Ebola in Sierra Leone</h1>
   <ul>
     <li>Aim to infer prevalence dynamics using 101 EBOV genomes sequenced from <b>Kailahun District</b> in Sierra Leone during the 2014-2015 EVD epidemic.</li>
     <li>Sequences from various studies, curated by <a class="cite">[Dudas et al., Nature, 2017]</a>.</li>
@@ -208,29 +207,20 @@ reveal:
 </section>
 
 <section>
-  <h2>Sample distribution</h2>
+  <h1>Sample distribution</h1>
   <img data-src="EbolaSampleDist.svg" style="height:500px">
 
   <p style="margin-top:-20px">Nonlinear relationship between WHO case counts and genome samples!</p>
 </section>
 
 <section>
-  <h2>EBOV prevalence</h2>
+  <h1>EBOV prevalence</h1>
   <img data-src="kailahun_full.png" style="width:700px">
 </section>
 
 <section>
-  <h2>EBOV reproductive number</h2>
+  <h1>EBOV reproductive number</h1>
   <img data-src="kailahun_full_Re.png" style="width:700px">
-</section>
-
-<section>
-  <h2>Software implementation</h2>
-  <center>
-  <img data-src="EpiInf_page.png" style="width:500px">
-  </center>
-
-  Visit <b><a href="https://tgvaughan.github.io/EpiInf">tgvaughan.github.io/EpiInf</a></b> for installation instructions.
 </section>
 
 <section class="center">
@@ -238,7 +228,7 @@ reveal:
 </section>
 
 <section>
-    <h2>Cartoon bacterial population genetics</h2>
+    <h1>Cartoon bacterial population genetics</h1>
 
     <div style="position: relative; top:0; left:0; width:1000px; height:400px">
         <img data-src="binary_fission_7.svg" class="fragment current-visible" data-fragment-index="1"
@@ -270,7 +260,7 @@ reveal:
 </section>
 
 <section>
-    <h2>The Problem for Phylogenetic Inference</h2>
+    <h1>The Problem for Phylogenetic Inference</h1>
 
     <p>For many bacteria, the ratio between the recombination rate and the mutation rate is extremely high.</p>
 
@@ -281,7 +271,7 @@ reveal:
 </section>
 
 <section>
-    <h2>The Coalescent with Gene Conversion</h2>
+    <h1>The Coalescent with Gene Conversion</h1>
 
     <div style="position: relative; top:0; left:0; width:1000px; height:500px;">
         <img data-src="WrightFisherGC1.svg"
@@ -318,7 +308,7 @@ reveal:
 </section>
 
 <section>
-    <h2>Full ARG</h2>
+    <h1>Full ARG</h1>
 
     <img data-src="full_arg.svg" style="box-shadow:none;width:500px">
 
@@ -327,7 +317,7 @@ reveal:
 </section>
 
 <section>
-    <h2>Approximation: ClonalOrigin</h2>
+    <h1>Approximation: ClonalOrigin</h1>
 
     <img data-src="CO_arg.svg" style="box-shadow:none;width:500px">
 
@@ -346,7 +336,7 @@ reveal:
 </section>
 
 <section>
-  <h2>Application to simulated data</h2>
+  <h1>Application to simulated data</h1>
   <p style="margin:0px">True ARG:</p>
   <img data-src="true_tree.svg" style="box-shadow:none; padding:0; margin:0; width:700px">
 
@@ -356,7 +346,7 @@ reveal:
 
 
 <section>
-    <h2>Application to <i>Escherichia coli</i></h2>
+    <h1>Application to <i>Escherichia coli</i></h1>
 
     <ul>
         <li>Applied method to <i>E. coli</i> O157/O26 sequences collected by Tessy George (<sup>m</sup>EpiLab, Massey University, New Zealand).</li>
@@ -368,7 +358,7 @@ reveal:
 </section>
 
 <section>
-    <h2>Application to <i>Escherichia coli</i></h2>
+    <h1>Application to <i>Escherichia coli</i></h1>
 
     <div style="position: relative; top:0; left:0; width:1000px; height:600px;">
         <img data-src="Tessy_new_summary2.svg" style="position:absolute;top:0;left:0;width:1000px;box-shadow:none;background-color:white">
@@ -378,166 +368,11 @@ reveal:
 </section>
 
 <section>
-    <h2>Software implementation</h2>
-
-    <img data-src="bacter_logo.svg" style="width:500px;box-shadow:none">
-
-    <br>
-
-    <a href="http://tgvaughan.github.io/bacter">tgvaughan.github.io/bacter</a>
-
-    <br>
-    <br>
-
-    <ul>
-        <li class="fragment">BEAST 2 package that performs inference under the ClonalOrigin model.</li>
-        <li class="fragment">Joint inference of the clonal frame, recombinant edges and parameters.</li>
-        <li class="fragment">Can be combined with usual variety of substitution models, parametric population models and parameter priors.</li>
-        <li class="fragment">GUI analysis configuration via BEAUti.</li>
-    </ul>
-</section>
-
-
-<section class="center">
-  <h1>Third Adventure:<br>Finding super-spreading Events</h1>
-</section>
-
-<section>
-  <h2>What are polytomies?</h2>
-
-  <p> Polytomies are features of phylogenetic trees: internal nodes with more than two children, also known as multifurcations.</p>
-
-  <img data-src="polytomy.svg" style="width:60%"/>
-
-  <p style="margin-top:0em">These can represent two different things:</p>
-  <ul>
-    <li><b>Soft</b> polytomies merely represent an inability to resolve the order of speciation/birth events due to insufficient data.
-      <li><b>Hard</b> polytomies represent a true or nearly true multifurcation of the parent species/transmission lineage.
-  </ul>
-
-  <p>We are interested in hard polytomies here.</p>
-</section>
-
-<section>
-  <h2>When may polytomies occur?</h2>
-
-  <dl>
-    <li><dt>Gene tree context:</dt>
-      <dd>Some marine species are known to have "sweepstakes reproductive success", meaning that offspring distributions have extremely high variance.</dd></li>
-    <li><dt>Species trees:</dt>
-      <dd>Simultaneous speciation events.  Has been hypothesized several times in the literature.</dd></li>
-    <li><dt>Transmission tree context:</dt>
-      <dd>Super-spreading <i>events</i> where single individuals "instantaneously" produce a large number of secondary infections.</dd></li>
-</section>
-
-
-<section>
-  <h2>The Wright-Fisher Process</h2>
-
-  <p>Every generation constrained to have the same size.</p>
-
-  <img data-src="WF.svg" style="width:100%">
-
-</section>
-
-<section>
-  <h2>The Galton-Watson Process</h2>
-
-  <p>Every individual produces an i.i.d. number of offspring, with $\mathbb{E}[m]>1$.</p>
-
-  <img data-src="GW.svg" style="width:100%">
-
-  <ul>
-    <li>Each new generation is sampled (without replacement) from
-  the intermediate generation.</li>
-    <li>Sampled trees described by the so-called $\beta$-coalescent.
-</section>
-
-<section>
-  <h2>Example $\beta$-coalescent trees</h2>
-  <p>$\alpha=2.0$ (regular coalescent):</p>
-  <img data-src="simtree_alpha2.svg" style="width:70%">
-</section>
-
-<section>
-  <h2>Example $\beta$-coalescent trees</h2>
-  <p>$\alpha=1.5$</p>
-
-  <img data-src="simtree_alpha1.5.svg" style="width:70%">
-</section>
-
-<section>
-  <h2>Example $\beta$-coalescent trees</h2>
-  <p>$\alpha=1.0$</p>
-
-  <img data-src="simtree_alpha1.svg" style="width:70%">
-</section>
-
-<section>
-  <blockquote class="textbox" style="margin-top:200px">
-    <div class="title">
-      Our Goal
-    </div>
-    To perform phylogenetic inference under the $\beta$-coalescent model
-    to allow joint estimation of both transmission tree polytomies and the $\alpha$ parameter.
-  </blockquote>
-
-  <ul style="margin-top:2em">
-    <li>Requires Markov-chain Monte Carlo over trees with/without polytomies.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Validation: Inference from simulated data</h2>
-
-  <div style="margin-top:-1em">
-  <img data-src="simulated_truth.png" style="width:33%">
-  <img data-src="simulated_inference.png" style="width:33%">
-  </div>
-</section>
-
-<section>
-  <h2>Ebola in Sierra Leone</h2>
-  <ul>
-    <li>Aim to infer super-spreading events ancestral to 101 EBOV genomes sequenced from <b>Kailahun District</b> in Sierra Leone during the 2014-2015 EVD epidemic.</li>
-    <li>Sequences from various studies, curated by <a class="cite">[Dudas et al., Nature, 2017]</a>.</li>
-    <li>How do results from inference under the Beta-coalescent differ from results inferred under classic birth-death models?</li>
-  </ul>
-  <img data-src="WA_EVD_Dudas.jpg" style="height:350px">
-</section>
-
-<section>
-  <h2>Application to Ebola</h2>
-
-  <img data-src="ebola_nopoly.png" style="width:70%">
-  <p>Tree inferred under stochastic SIR birth-death model.</p>
-</section>
-
-<section>
-  <h2>Application to Ebola</h2>
-
-  <img data-src="ebola_poly.png" style="width:70%">
-  <p>Tree inferred under constant-$N_e$ Beta-coalescent model.</p>
-</section>
-
-<section>
-  <h2>Steps necessary for "serious" phylodynamic analyses</h2>
+  <h1>Software implementations</h1>
 
   <ul class="spaced" style="margin-top:5%">
-    <li>Account for structure and population dynamics.</li>
-    <li>Allow for mixture of offspring distributions.</li>
-    <li>Apply a spike and slab prior on the probability of non-binary birth events.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Software implementation</h2>
-
-  <ul class="spaced" style="margin-top:5%">
-    <li>Pitchfork: <a href="http://github.com/tgvaughan/pitchfork">github.com/tgvaughan/pitchfork</a></li>
-    <li>Easy GUI interface, integrates with other models easily.</li>
-    <li>Infer $\alpha$ and (parametric) population dynamics jointly together with multifurcating trees.</li>
-    <li>Can potentially help identify superspreading in transmission trees.</li>
+    <li>EpiInf: <a href="http://github.com/tgvaughan/pitchfork">github.com/tgvaughan/EpiInf</a></li>
+    <li>Bacter: <a href="http://github.com/tgvaughan/pitchfork">github.com/tgvaughan/bacter</a></li>
   </ul>
 </section>
 

@@ -1,15 +1,42 @@
+#+TITLE: Notes on Department Seminar Talk
 
 Intro to group at the beginning.
 
 Mention more recent EBOV outbreak.  Real-time phylogenetics!
 
-Make the end more exciting!!
-integrate differnet data sources, 
+Make the end more exciting!! Integrate differnet data sources. 
 
 Introduction to superspreading in the wrong order - talk about
 superspreading first, then model.
 Why does superspreading happen??
+Cut out polytomy project?
 
 Taming the BEAST!
 
 Replace influenza tree (Nicola is using it).
+
+Thank the group!
+
+* Tasks [27%]
+
+1. [ ] Intro to group at the beginning.
+
+2. [ ] Mention more recent EBOV outbreak.  Real-time phylogenetics!
+
+3. [ ] Make the end more exciting!! Integrate differnet data sources. 
+
+4. [X] Cut out polytomy project?
+
+5. [ ] Taming the BEAST!
+
+6. [ ] Replace influenza tree (Nicola is using it).
+
+7. [ ] Thank the group!
+
+8. [X] Merge software pages
+
+9. [ ] Add more logos (SIB, BSSE) to title page
+   
+10. [ ] Replace "overview" with "adventure map"
+
+11. [X] Put "what is a population?" slide right at the begining
