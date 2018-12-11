@@ -17,7 +17,7 @@ Replace influenza tree (Nicola is using it).
 
 Thank the group!
 
-* Tasks [83%]
+* Tasks [100%]
 
 1. [X] Add more logos (SIB, BSSE) to title page
    
@@ -25,7 +25,7 @@ Thank the group!
 
 3. [X] Thank the group!
 
-4. [ ] Mention more recent EBOV outbreak.  Real-time phylogenetics!
+4. [X] Mention more recent EBOV outbreak.  Real-time phylogenetics!
 
 5. [X] Make the Ebola study more exciting!! Integrate differnet data sources. 
 
@@ -41,4 +41,4 @@ Thank the group!
 
 11. [X] Put "what is a population?" slide right at the begining
 
-12. [ ] Replace splitstree diagram with stock E coli image.
+12. [X] Replace splitstree diagram with stock E coli image.

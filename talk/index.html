@@ -1,5 +1,5 @@
 ---
-title: Flexible phylodynamic inferrence of prevalence dynamics using Particle Filtering
+title: Flexible phylodynamic inference of prevalence dynamics using Particle Filtering
 layout: presentation
 reveal:
     theme: theme.css
@@ -114,7 +114,7 @@ reveal:
     <img data-src="connecting_dots1.svg">
     <img data-src="connecting_dots2.svg" class="fragment">
     <img data-src="connecting_dots3.svg" class="fragment">
-    <img data-src="connecting_dots4.svg" class="fragment">
+    <!--img data-src="connecting_dots4.svg" class="fragment"-->
     <img data-src="connecting_dots5.svg" class="fragment">
   </div>
 </section>
@@ -145,7 +145,7 @@ reveal:
 
   <ul>
     <li>For small populations, <i>or populations which are temporarily small</i> (e.g. exponential growth), discrete nature of population size matters.</li>
-    <li class="fragment">As we usually have no way of knowing the exact timing of population events, this suggests use of stochastic population models.</li>
+    <li>As we usually have no way of knowing the exact timing of population events, this suggests use of stochastic population models.</li>
   </ul>
 
   <div class="fragment">
@@ -237,6 +237,35 @@ reveal:
 </section>
 
 <section>
+  <h1>Continuing outbreak in the DRC</h1>
+
+  <img data-src="Ebola_Congo_spatial.png" style="height:550px">
+  
+</section>
+
+<section>
+  <h1>Continuing outbreak in the DRC</h1>
+
+  <ul>
+    <li>Response is primarily based on traditional epidemiological data.</li>
+    <li>Increasing availability of sequencing technology may enable future
+      responses to be informed by <b>real-time phylodynamics</b>.
+      <ul>
+        <li>Could provide up-to-the-minute estimates of where the virus has come from and to where
+          it's likely to spread.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div>
+  <img data-src="Ebola_Congo_cases.png" style="width:65%">
+  <div class="cite">World Health Organization Situation Report, 3 December 2018</div>
+  </div>
+
+
+</section>
+
+<section>
   <div class="flipper" style="width:100%;height:800px;margin-top:-2em">
     <img data-src="AdventureMapBacter.png" style="height:100%;margin-top:0">
   </div>
@@ -269,9 +298,9 @@ reveal:
     <img data-src="conjugation.jpg" class="fragment" data-fragment-index="7"
                                                      style="position:absolute; top:100px; right:0px; height:250px;">
     <ul>
-        <li class="fragment">Effect of events can be plasmid transfer, insertion or homologous recombination.</li>
-        <li class="fragment">Rate of recombination varies and is subject to selection.</li>
-        <li class="fragment">Focus on homologous recombination: only event which doesn't alter the length of the sequence.</li>
+        <li class="fragment" data-fragment-index="7">Effect of events can be plasmid transfer, insertion or homologous recombination.</li>
+        <li class="fragment" data-fragment-index="7">Rate of recombination varies and is subject to selection.</li>
+        <li class="fragment" data-fragment-index="7">Focus on homologous recombination: only event which doesn't alter the length of the sequence.</li>
     </ul>
 </section>
 
@@ -305,14 +334,14 @@ reveal:
     </div>
     <a class="cite" href="">Wiuf, 1999</a>; <a class="cite" href="">Wiuf and Hein, 2000</a>
 
-    <div class="fragment" style="position:absolute; top:100px; left:0px; width:350px">
+    <!--div class="fragment" style="position:absolute; top:100px; left:0px; width:350px">
         <table class="params" style="font-size:0.8em">
             <tr><th colspan="2">Parameters</th></tr>
             <tr> <td>$N(t)g$</td> <td>Coalescence rate</td> </tr>
             <tr> <td>$\rho_s$</td> <td>Recombination rate</td> </tr>
             <tr> <td>$\delta$</td> <td>Expected tract length</td> </tr>
         </table>
-    </div>
+    </div-->
 </section>
 
 <section class="center">
@@ -365,14 +394,18 @@ reveal:
     <h1>Application to <i>Escherichia coli</i></h1>
 
     <div>
-      <div class="display:inline-block;width:400px">
-        <img data-src="E_coli.jpg" style="width:300px">
+      <div style="display:inline-block;width:40%;vertical-align:middle">
+        <img data-src="E_coli.jpg" style="width:100%">
       </div>
-      <div class="display:inline-block;width:500px">
-        <ul>
+      <div style="display:inline-block;width:49%;vertical-align:middle">
+        <ul class="spaced">
           <li>Applied method to sequences from 23 <i>E. coli</i> O157/O26 human and cattle-derived isolates collected by Tessy George (<sup>m</sup>EpiLab, Massey University, New Zealand).</li>
-          <li>Isolates included Shiga-toxin producing (+STEC) and non-Shiga-toxin producing (-STEC) strains.</li>
-          <li>Sequences for 53 rMLST genes (21.1 kb total) from each of the isolates.</li>
+          <li>Isolates included
+            <ul>
+              <li>Shiga-toxin producing strains (+STEC)</li>
+              <li>non-Shiga-toxin producing strains (-STEC)</li>
+            </ul>
+          <li>Sequences for 53 rMLST genes<br>(21.1 kb total) from each isolate.</li>
         </ul>
       </div>
     </div>
@@ -421,15 +454,15 @@ reveal:
       <li>Auckland, New Zealand</li>
       </ul>
   <li>A workshop in Sydney, Australia is being held in February.</li>
-  <li>We also maintain a growing collection of BEAST 2 tutorials and instructional materal at <a href="https://taming-the-beast.org">https://taming.the.beast.org</a>.</li>
+  <li>We also maintain a growing collection of BEAST 2 tutorials and instructional material at <a href="https://taming-the-beast.org">https://taming.the.beast.org</a>.</li>
   </ul>
-  
+
 </section>
 
 <section>
   <h1>Summary</h1>
 
-  <ul class="spaced">
+  <ul class="spaced" style="margin-top:10%">
     <li>Phylogenetic inference provides much more than a means of inferring phylogenetic trees.</li>
     <li>Broadly, these methods provide a means of connecting observed genetic and other forms of data to a large variety of features of the population from which the data is sampled.</li>
 
@@ -441,7 +474,7 @@ reveal:
   <h1>Acknowledgements</h1>
 
   <dl>
-    <li><dt>Epidemic dyanamics inference:</dt>
+    <li><dt>Epidemic dynamics inference:</dt>
       <dd>Tanja Stadler (ETHZ), Gabriel Leventhal (MIT), David Rasmussen (NCSU),<br>
         David Welch and Alexei Drummond (Univ. Auckland, NZ)</dd></li>
     <li><dt>Bacterial recombination graph inference:</dt>
