@@ -17,7 +17,7 @@ Replace influenza tree (Nicola is using it).
 
 Thank the group!
 
-* Tasks [81%]
+* Tasks [83%]
 
 1. [X] Add more logos (SIB, BSSE) to title page
    
@@ -31,7 +31,7 @@ Thank the group!
 
 6. [X] Cut out polytomy project?
 
-7. [ ] Taming the BEAST!
+7. [X] Taming the BEAST!
 
 8. [X] Replace influenza tree (Nicola is using it).
 
@@ -40,3 +40,5 @@ Thank the group!
 10. [X] Replace "overview" with "adventure map"
 
 11. [X] Put "what is a population?" slide right at the begining
+
+12. [ ] Replace splitstree diagram with stock E coli image.

@@ -93,7 +93,7 @@ section.titlepage {
         font-style: normal;
     }
 
-    .spaced li:not(:first-child) {
+    .spaced > li:not(:first-child) {
         padding-top: 1em;
     }
 

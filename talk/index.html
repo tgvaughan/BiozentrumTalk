@@ -364,13 +364,18 @@ reveal:
 <section>
     <h1>Application to <i>Escherichia coli</i></h1>
 
-    <ul>
-        <li>Applied method to <i>E. coli</i> O157/O26 sequences collected by Tessy George (<sup>m</sup>EpiLab, Massey University, New Zealand).</li>
-        <li>Sequences for 53 rMLST genes (21.1 kb total) from each of 23 human and cattle-derived isolates.</li>
-        <li>Analyzed using fixed expected tract length parameter and informative prior on conversion rate parameter.</li>
-    </ul>
-
-    <img data-src="Tessy_rMLST_splitstree.svg" style="width:900px;box-shadow:none">
+    <div>
+      <div class="display:inline-block;width:400px">
+        <img data-src="E_coli.jpg" style="width:300px">
+      </div>
+      <div class="display:inline-block;width:500px">
+        <ul>
+          <li>Applied method to sequences from 23 <i>E. coli</i> O157/O26 human and cattle-derived isolates collected by Tessy George (<sup>m</sup>EpiLab, Massey University, New Zealand).</li>
+          <li>Isolates included Shiga-toxin producing (+STEC) and non-Shiga-toxin producing (-STEC) strains.</li>
+          <li>Sequences for 53 rMLST genes (21.1 kb total) from each of the isolates.</li>
+        </ul>
+      </div>
+    </div>
 </section>
 
 <section>
@@ -386,14 +391,39 @@ reveal:
 <section>
   <h1>Software implementations</h1>
 
-  <ul class="spaced" style="margin-top:5%">
-    <li>EpiInf: <a href="http://github.com/tgvaughan/pitchfork">github.com/tgvaughan/EpiInf</a></li>
-    <li>Bacter: <a href="http://github.com/tgvaughan/pitchfork">github.com/tgvaughan/bacter</a></li>
+
+  <ul class="spaced">
+    <li> Each algorithm and model described in this talk is implemented as free software.</li>
+    <li> Specifically, each is implemented as a BEAST 2 package:
+      <ol>
+        <li style="margin-top:1em">EpiInf: <a href="http://github.com/tgvaughan/pitchfork">github.com/tgvaughan/EpiInf</a></li>
+        <li>Bacter: <a href="http://github.com/tgvaughan/pitchfork">github.com/tgvaughan/bacter</a></li>
+      </ol>
+    </li>
+    <li>Both packages provide a graphical interface for configuring analyses.</li>
+    <li>Tutorials available on their respective websites.</li>
   </ul>
+
+  <center>
+    <img data-src="Beast2_logo.jpg">
+  </center>
 </section>
 
 <section>
-  <h1>Taming the BEAST Workshops</h1>
+  <img data-src="TTB_logo.png" style="width:70%">
+
+  <ul class="spaced">
+  <li>Members of the cEvo group have organized a global series of workshops providing instruction on conducting Bayesian phylodynamic analyses using BEAST 2.</li>
+  <li>Workshops have been held in
+    <ul class="">
+      <li>Switzerland (twice)</li>
+      <li>London, UK</li>
+      <li>Auckland, New Zealand</li>
+      </ul>
+  <li>A workshop in Sydney, Australia is being held in February.</li>
+  <li>We also maintain a growing collection of BEAST 2 tutorials and instructional materal at <a href="https://taming-the-beast.org">https://taming.the.beast.org</a>.</li>
+  </ul>
+  
 </section>
 
 <section>
