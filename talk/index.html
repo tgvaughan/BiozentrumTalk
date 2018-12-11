@@ -24,27 +24,28 @@ reveal:
     D-BSSE Departmental Seminar, 11<sup>th</sup> Dec, 2018
   </div>
 
-  <div style="float:left;margin-top:-0.5em">
-    <img data-src="eth_logo.png" style="height:100px">
-  </div>
-  <div style="float:right;">
-    <img data-src="cEvo_logo.png" style="height:80px">
+  <div>
+    <div style="display:inline-block;">
+      <img data-src="SIB_logo_20.svg" style="height:100px">
+    </div>
+    <div style="display:inline-block;">
+      <img data-src="eth_logo.png" style="height:100px">
+    </div>
+    <div style="display:inline-block;">
+      <img data-src="bsse_logo.gif" style="height:100px">
+    </div>
+    <div style="display:inline-block;">
+      <img data-src="cEvo_logo.png" style="height:80px">
+    </div>
   </div>
 </section>
 
 <section>
-  <h1>Overview</h1>
-
-  <ul class="spaced" style="margin-top:10%">
-    <li> Introduction to <b>Bayesian Phylodynamics</b> </li>
-    <li> Phylodynamic inference of <b>epidemic prevalence dynamics</b></li>
-    <li> Inferring recent <b>non-treelike evolution</b> of pathogenic E coli </li>
-  </ul>
-
-</section>
-
-<section class="center">
-  <h1>Introduction: Bayesian Phylodynamics</h1>
+  <div class="flipper" style="width:100%;height:800px;margin-top:-2em">
+  <img data-src="AdventureMap.png" style="height:100%;margin-top:0">
+  <img data-src="AdventureMapStart.png" style="height:100%;margin-top:0" class="fragment">
+  <img data-src="AdventureMapIntro.png" style="height:100%;margin-top:0" class="fragment">
+  </div>
 </section>
 
 <section>
@@ -78,8 +79,8 @@ reveal:
          style="position:absolute;top:0;left:0;" />
     <div class="figure fragment"
          style="position:absolute;top:0;left:0;margin:0;padding:0;">
-      <img width="800" data-src="flu_tree.png" style="margin:0px;padding:0px"/>
-      <div class="cite">Bedford et al., PLoS Pathogens, 2010</div>
+      <img width="800" data-src="zika_tree.jpg" style="margin:0px;padding:0px"/>
+      <div class="cite">Faria et al., Nature, 2017</div>
     </div>
   </div>
 </section>
@@ -94,20 +95,16 @@ reveal:
   <img data-src="phylodynamics.svg"/>
 </section>
 
-<section>
+<section class="center">
   <h1>Connecting the dots...</h1>
 
-<section class="center">
-  <div class="flipper" style="margin-top:100px">
+  <div class="flipper">
     <img data-src="connecting_dots1.svg">
     <img data-src="connecting_dots2.svg" class="fragment">
     <img data-src="connecting_dots3.svg" class="fragment">
     <img data-src="connecting_dots4.svg" class="fragment">
     <img data-src="connecting_dots5.svg" class="fragment">
   </div>
-
-</section>
-
 </section>
 
 <section>
@@ -123,9 +120,12 @@ reveal:
 </section>
 
 
-<section class="center">
-  <h1>First Adventure:<br>Inferring Epidemic Dynamics</h1>
+<section>
+  <div class="flipper" style="width:100%;height:800px;margin-top:-2em">
+    <img data-src="AdventureMapEpiInf.png" style="height:100%;margin-top:0">
+  </div>
 </section>
+
 
 <section>
   <h1>Modelling epidemics using birth-death processes</h1>
@@ -184,20 +184,6 @@ reveal:
 </section>
 
 <section>
-  <h1>Including unsequenced samples</h1>
-
-    <ul>
-    <li>Including unsequenced samples in the particle filtering algorithm is easy: just add additional observations.</li>
-  </ul>
-
-  <img data-src="seq+noseqBPF.svg" style="width:1000px">
-
-  <ul>
-    <li>Much more efficient than including unsequenced samples on tree explicitly.</li>
-  </ul>
-</section>
-
-<section>
   <h1>Ebola in Sierra Leone</h1>
   <ul>
     <li>Aim to infer prevalence dynamics using 101 EBOV genomes sequenced from <b>Kailahun District</b> in Sierra Leone during the 2014-2015 EVD epidemic.</li>
@@ -214,6 +200,20 @@ reveal:
 </section>
 
 <section>
+  <h1>Including unsequenced samples</h1>
+
+    <ul>
+    <li>Including unsequenced samples in the particle filtering algorithm is easy: just add additional observations.</li>
+  </ul>
+
+  <img data-src="seq+noseqBPF.svg" style="width:1000px">
+
+  <ul>
+    <li>Much more efficient than including unsequenced samples on tree explicitly.</li>
+  </ul>
+</section>
+
+<section>
   <h1>EBOV prevalence</h1>
   <img data-src="kailahun_full.png" style="width:700px">
 </section>
@@ -223,9 +223,12 @@ reveal:
   <img data-src="kailahun_full_Re.png" style="width:700px">
 </section>
 
-<section class="center">
-  <h1>Second Adventure:<br>Non-treelike Evolution in <i>E. coli</i></h1>
+<section>
+  <div class="flipper" style="width:100%;height:800px;margin-top:-2em">
+    <img data-src="AdventureMapBacter.png" style="height:100%;margin-top:0">
+  </div>
 </section>
+
 
 <section>
     <h1>Cartoon bacterial population genetics</h1>
@@ -377,13 +380,17 @@ reveal:
 </section>
 
 <section>
+  <h1>Taming the BEAST Workshops</h1>
+</section>
+
+<section>
   <h1>Summary</h1>
 
   <ul class="spaced">
     <li>Phylogenetic inference provides much more than a means of inferring phylogenetic trees.</li>
     <li>Broadly, these methods provide a means of connecting observed genetic and other forms of data to a large variety of features of the population from which the data is sampled.</li>
 
-    <li>Bayesian phylodynamics is the key to many adventures - join us!</li>
+    <li>Bayesian phylodynamics is the key to many adventures!</li>
   </ul>
 </section>
 
@@ -397,8 +404,7 @@ reveal:
     <li><dt>Bacterial recombination graph inference:</dt>
       <dd>Nigel French, Tessy George and Patrick Biggs (Massey Univ., NZ)<br>
         David Welch and Alexei Drummond (Univ. Auckland, NZ)</dd></li>
-    <li><dt>Super-spreading event inference:</dt>
-      <dd>Tanja Stadler (ETHZ), Oliver Pybus (Oxford), Patrick Hoscheit (INRA)</dd></li>
+    <li>Prof. Tanja Stadler's Computational Evolution (cEvo) group!</li>
 </section>
 
 

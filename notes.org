@@ -17,26 +17,26 @@ Replace influenza tree (Nicola is using it).
 
 Thank the group!
 
-* Tasks [27%]
+* Tasks [72%]
 
-1. [ ] Intro to group at the beginning.
-
-2. [ ] Mention more recent EBOV outbreak.  Real-time phylogenetics!
-
-3. [ ] Make the end more exciting!! Integrate differnet data sources. 
-
-4. [X] Cut out polytomy project?
-
-5. [ ] Taming the BEAST!
-
-6. [ ] Replace influenza tree (Nicola is using it).
-
-7. [ ] Thank the group!
-
-8. [X] Merge software pages
-
-9. [ ] Add more logos (SIB, BSSE) to title page
+1. [X] Add more logos (SIB, BSSE) to title page
    
-10. [ ] Replace "overview" with "adventure map"
+2. [ ] Intro to group at the beginning.
+
+3. [X] Thank the group!
+
+4. [ ] Mention more recent EBOV outbreak.  Real-time phylogenetics!
+
+5. [X] Make the Ebola study more exciting!! Integrate differnet data sources. 
+
+6. [X] Cut out polytomy project?
+
+7. [ ] Taming the BEAST!
+
+8. [X] Replace influenza tree (Nicola is using it).
+
+9. [X] Merge software pages
+
+10. [X] Replace "overview" with "adventure map"
 
 11. [X] Put "what is a population?" slide right at the begining
